@@ -1027,7 +1027,7 @@ void create_lake(int namlst)
      * and outflows, the height may be temporarily above the crest level,     *
      * and therefore 10 additional layers are included                        *
      **************************************************************************/
-    Nmorph = ( ( H[bsn_vals-1] * 10.0 ) + 1.0 / 1000.0 ) + 10;
+    Nmorph = ( ( H[bsn_vals-1] * MphInc ) + 1.0 / 1000.0 ) + 10;
 
     allocate_storage();
 
@@ -1072,7 +1072,7 @@ void create_lake(int namlst)
     // and  ksto is the first layer with a positive V
     j = -1;
     for (i = 0; i < Nmorph; i++) {
-    	h_z = (i+1.0)/10.0;
+    	h_z = (i+1.0)/MphInc;
 
         while (j != (bsn_vals-2)) {
             j++;
@@ -1113,10 +1113,10 @@ void create_lake(int namlst)
 
     // Calculate the maximum and minimum volume and volume at crest
     VMin = MphLevelVol[Nmorph-1] * VMin;
-    VMax = 10.0 * VMin;
+    VMax = MphInc * VMin;
 
     // Calculate storage at crest level, VolAtCrest
-    x = CrestLevel * 10.0;
+    x = CrestLevel * MphInc;
     y = AMOD(x, 1.0);
     ij = x - y;
     if (ij >= Nmorph) {

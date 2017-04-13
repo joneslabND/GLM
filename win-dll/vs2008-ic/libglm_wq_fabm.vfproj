@@ -6,7 +6,7 @@
 	<Configurations>
 		<Configuration Name="Debug|Win32" OutputDirectory="$(PlatformName)-$(ConfigurationName)" IntermediateDirectory="$(PlatformName)-$(ConfigurationName)" ConfigurationType="typeDynamicLibrary">
 				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" Preprocess="preprocessYes" AdditionalIncludeDirectories="..\..\src\;..\..\..\fabm-git\include\;..\..\..\fabm-git\src\drivers\glm\;..\..\..\fabm-git\compilers\vs2008\glm\$(PlatformName)-$(ConfigurationName)\;..\..\..\..\WinLibs\NetCDF4_dll_$(PlatformName)\" PreprocessorDefinitions="FABM;PLOTS;XPLOTS;_FORTRAN_SOURCE_;USE_DL_LOADER=1" F2003Semantics="true" WarnInterfaces="true" Traceback="true" BoundsCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
-				<Tool Name="VFLinkerTool" AdditionalOptions="/def:..\libglm_wq_fabm.def" Version="2.2.0" SuppressStartupBanner="true" AdditionalLibraryDirectories="$(PlatformName)-$(ConfigurationName)" IgnoreDefaultLibraryNames="LIBCMTD" SubSystem="subSystemWindows" LinkDLL="true" AdditionalDependencies="libplugin.lib"/>
+				<Tool Name="VFLinkerTool" AdditionalOptions="/def:..\libglm_wq_fabm.def" Version="2.5.0dev01" SuppressStartupBanner="true" AdditionalLibraryDirectories="$(PlatformName)-$(ConfigurationName)" IgnoreDefaultLibraryNames="LIBCMTD" SubSystem="subSystemWindows" LinkDLL="true" AdditionalDependencies="libplugin.lib"/>
 				<Tool Name="VFLibrarianTool" AdditionalLibraryDirectories="..\..\..\fabm-git\compilers\vs2008\$(PlatformName)-$(ConfigurationName)/" AdditionalDependencies="fabm-glm.lib"/>
 				<Tool Name="VFResourceCompilerTool"/>
 				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
@@ -17,7 +17,7 @@
 				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
 		<Configuration Name="Release|Win32" OutputDirectory="$(PlatformName)-$(ConfigurationName)" IntermediateDirectory="$(PlatformName)-$(ConfigurationName)" ConfigurationType="typeDynamicLibrary">
 				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" Preprocess="preprocessYes" AdditionalIncludeDirectories="..\..\src\;..\..\..\fabm-git\include\;..\..\..\fabm-git\src\drivers\glm\;..\..\..\fabm-git\compilers\vs2008\glm\$(PlatformName)-$(ConfigurationName)\;..\..\..\..\WinLibs\NetCDF4_dll_$(PlatformName)\" PreprocessorDefinitions="FABM;PLOTS;XPLOTS;_FORTRAN_SOURCE_;USE_DL_LOADER=1" F2003Semantics="true"/>
-				<Tool Name="VFLinkerTool" AdditionalOptions="/def:..\libglm_wq_fabm.def" Version="2.2.0" SuppressStartupBanner="true" AdditionalLibraryDirectories="$(PlatformName)-$(ConfigurationName)" IgnoreDefaultLibraryNames="LIBCMT" SubSystem="subSystemWindows" LinkDLL="true" AdditionalDependencies="libplugin.lib"/>
+				<Tool Name="VFLinkerTool" AdditionalOptions="/def:..\libglm_wq_fabm.def" Version="2.5.0dev01" SuppressStartupBanner="true" AdditionalLibraryDirectories="$(PlatformName)-$(ConfigurationName)" IgnoreDefaultLibraryNames="LIBCMT" SubSystem="subSystemWindows" LinkDLL="true" AdditionalDependencies="libplugin.lib"/>
 				<Tool Name="VFLibrarianTool" AdditionalLibraryDirectories="..\..\..\fabm-git\compilers\vs2008\$(PlatformName)-$(ConfigurationName)/" AdditionalDependencies="fabm-glm.lib"/>
 				<Tool Name="VFResourceCompilerTool"/>
 				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
@@ -28,7 +28,7 @@
 				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
 		<Configuration Name="Debug|x64" OutputDirectory="$(PlatformName)-$(ConfigurationName)" IntermediateDirectory="$(PlatformName)-$(ConfigurationName)" ConfigurationType="typeDynamicLibrary">
 				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" Preprocess="preprocessYes" AdditionalIncludeDirectories="..\..\src\;..\..\..\fabm-git\include\;..\..\..\fabm-git\src\drivers\glm\;..\..\..\fabm-git\compilers\vs2008\glm\$(PlatformName)-$(ConfigurationName)\;..\..\..\..\WinLibs\NetCDF4_dll_$(PlatformName)\" PreprocessorDefinitions="FABM;PLOTS;XPLOTS;_FORTRAN_SOURCE_;USE_DL_LOADER=1" F2003Semantics="true" WarnInterfaces="true" Traceback="true" BoundsCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
-				<Tool Name="VFLinkerTool" AdditionalOptions="/def:..\libglm_wq_fabm.def" Version="2.2.0" SuppressStartupBanner="true" AdditionalLibraryDirectories="$(PlatformName)-$(ConfigurationName)" IgnoreDefaultLibraryNames="LIBCMTD" SubSystem="subSystemWindows" LinkDLL="true" AdditionalDependencies="libplugin.lib"/>
+				<Tool Name="VFLinkerTool" AdditionalOptions="/def:..\libglm_wq_fabm.def" Version="2.5.0dev01" SuppressStartupBanner="true" AdditionalLibraryDirectories="$(PlatformName)-$(ConfigurationName)" IgnoreDefaultLibraryNames="LIBCMTD" SubSystem="subSystemWindows" LinkDLL="true" AdditionalDependencies="libplugin.lib"/>
 				<Tool Name="VFLibrarianTool" AdditionalLibraryDirectories="..\..\..\fabm-git\compilers\vs2008\$(PlatformName)-$(ConfigurationName)/" AdditionalDependencies="fabm-glm.lib"/>
 				<Tool Name="VFResourceCompilerTool"/>
 				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
@@ -39,7 +39,7 @@
 				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
 		<Configuration Name="Release|x64" OutputDirectory="$(PlatformName)-$(ConfigurationName)" IntermediateDirectory="$(PlatformName)-$(ConfigurationName)" ConfigurationType="typeDynamicLibrary">
 				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" Preprocess="preprocessYes" AdditionalIncludeDirectories="..\..\src\;..\..\..\fabm-git\include\;..\..\..\fabm-git\src\drivers\glm\;..\..\..\fabm-git\compilers\vs2008\glm\$(PlatformName)-$(ConfigurationName)\;..\..\..\..\WinLibs\NetCDF4_dll_$(PlatformName)\" PreprocessorDefinitions="FABM;PLOTS;XPLOTS;_FORTRAN_SOURCE_;USE_DL_LOADER=1" F2003Semantics="true"/>
-				<Tool Name="VFLinkerTool" AdditionalOptions="/def:..\libglm_wq_fabm.def" Version="2.2.0" SuppressStartupBanner="true" AdditionalLibraryDirectories="$(PlatformName)-$(ConfigurationName)" IgnoreDefaultLibraryNames="LIBCMT" SubSystem="subSystemWindows" LinkDLL="true" AdditionalDependencies="libplugin.lib"/>
+				<Tool Name="VFLinkerTool" AdditionalOptions="/def:..\libglm_wq_fabm.def" Version="2.5.0dev01" SuppressStartupBanner="true" AdditionalLibraryDirectories="$(PlatformName)-$(ConfigurationName)" IgnoreDefaultLibraryNames="LIBCMT" SubSystem="subSystemWindows" LinkDLL="true" AdditionalDependencies="libplugin.lib"/>
 				<Tool Name="VFLibrarianTool" AdditionalLibraryDirectories="..\..\..\fabm-git\compilers\vs2008\$(PlatformName)-$(ConfigurationName)/" AdditionalDependencies="fabm-glm.lib"/>
 				<Tool Name="VFResourceCompilerTool"/>
 				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>

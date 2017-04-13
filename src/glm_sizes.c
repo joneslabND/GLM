@@ -64,7 +64,7 @@ int _storage_index(AED_REAL height, AED_REAL *y)
 AED_REAL _storage_volume(AED_REAL height)
 {
     AED_REAL y = 0.;
-    int ij = _storage_index((height * 10.), &y);
+    int ij = _storage_index((height * MphInc), &y);
 
     return MphLevelVol[ij] + y * dMphLevelVol[ij];
 }
@@ -72,8 +72,8 @@ AED_REAL _storage_volume(AED_REAL height)
 AED_REAL _storage_area(AED_REAL height)
 {
     AED_REAL y = 0.;
-    int ij = _storage_index((height * 10.), &y);
+    int ij = _storage_index((height * MphInc), &y);
 
     if (ij != -1) return MphLevelArea[ij] + y * dMphLevelArea[ij];
-    return MphLevelArea[0] * height * 10.;
+    return MphLevelArea[0] * height * MphInc;
 }

@@ -980,13 +980,13 @@ static int new_storage(int *iRiv)
     }
 
     //# Account for the extra volumes of the downflows.
-    iTop = round(Lake[surfLayer].Height * 10.0) - 1;
+    iTop = round(Lake[surfLayer].Height * MphInc) - 1;
     if ( iTop >= Nmorph ) iTop = Nmorph - 1;
     EXTRA = zero;
     DOL = zero;
 
     for (j = botmLayer; j <= iTop; j++) {
-        D = (j+1) / 10.0;
+        D = (j+1) / MphInc;
         EXTRA = extra_volume(DOL, D, Lake[surfLayer].Height, Inflows);
         if (j == botmLayer)
             LayerVol = MphLevelVol[j];
